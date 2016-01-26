@@ -1,11 +1,11 @@
 {
-    "name": "xiamu",
-    "main": "xiamu/index.html",
+    "name": "player",
+    "main": "player/index.html",
     "nodejs":true,
 
     "window": {
 
-        "title": "xiamu",
+        "title": "player",
         "toolbar": false,
         "icon" : "logo.png",
         "width": 600,
