@@ -35,6 +35,7 @@
   }
 
   function addEventListener(){
+    $("button").focus(function(){this.blur();});
     $("#close").on('click',closeWindow);
     $("#minimize").on('click',minimizeWindow);
     $("#turnUp").on('click',showVolumeControl);
@@ -52,6 +53,7 @@
   }
 
   function submitConf(){
+    $("#configWindow").hide();
     conf.getDataPath = $("#musicPath").val();
     loadMusic();
     conf.themeNumber = $("#themeNumber").val();
@@ -69,12 +71,10 @@
   function configPlay(){
     $("#body").append('<div hidden="hidden" id="configWindow" class="confTheme"></div>');
     $("#configWindow").append('<div style="height:25px;border-bottom:1px solid gray;line-height:25px;padding:3px;">' +
-    '设置<span id="closeConfig" class="glyphicon glyphicon-remove" aria-hidden="true" style="cursor:pointer;display:inline-block;float:right;"></span></div>');
+    '设置<span id="closeConfig" class="glyphicon glyphicon-remove" aria-hidden="true" style="display:inline-block;float:right;"></span></div>');
     $("#configWindow").append('<div style="padding:10px;">' +
     '<input id="musicPath" type="url" class="form-control" placeholder="音乐目录">'+
-    '<input type="url" class="form-control" id="listNumber" placeholder="列表数量">'+
-    '<input type="url" class="form-control" id="themeNumber" placeholder="主题编号">'+
-    '<input type="url" class="form-control" id="other" placeholder="其他">'+
+    '<input type="url" class="form-control" id="themeNumber" placeholder="主题编号(0/1)">'+
     '<button id="submit" style="width:280px;margin-top:30px;" type="button" class="btn btn-default">确认</button></div>');
   }
 
@@ -160,7 +160,7 @@
       conf.logoShowThread = setInterval(function(){
         var temp = parseInt(Math.random() * 6);
         $("#logo").css('color',conf.logoColor[temp]);
-      },500);
+      },300);
     }else{
       $(this).addClass("glyphicon-play");
       $(this).removeClass("glyphicon-pause");

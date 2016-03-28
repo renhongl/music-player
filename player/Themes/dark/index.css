@@ -25,7 +25,7 @@
 }
 
 #list div{
-  cursor:pointer;overflow:hidden;height:15px;
+  overflow:hidden;height:15px;
 }
 
 #list span:hover{
@@ -33,7 +33,7 @@
 }
 
 #list span{
-  font-size:15px;cursor:pointer;
+  font-size:15px;
 }
 
 #foot span:hover{
@@ -45,7 +45,7 @@
 }
 
 #foot span{
-  cursor:pointer;
+
 }
 
 #header span:hover{
@@ -54,6 +54,7 @@
 
 #list div:hover{
   color:white;
+  cursor:default;
 }
 
 #nabar:hover{
@@ -98,7 +99,7 @@
 }
 
 #configWindow{
-  color:white;position:absolute;left:150px;top:50px;width:300px;height:300px;border-radius:5px;border:1px solid gray;box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+  color:white;position:absolute;left:150px;top:50px;width:300px;height:200px;border-radius:5px;border:1px solid gray;box-shadow:4px 4px 4px rgba(0,0,0,0.5);
 }
 
 .confTheme{
@@ -106,7 +107,7 @@
 }
 
 #logo{
-  cursor:pointer;display:inline-block;float:left;color:white;
+  display:inline-block;float:left;color:white;
 }
 
 #toDrag{
@@ -114,15 +115,15 @@
 }
 
 #close{
-  cursor:pointer;display:inline-block;float:right;
+  display:inline-block;float:right;
 }
 
 #minimize{
-  cursor:pointer;display:inline-block;float:right;margin-right:5px;
+  display:inline-block;float:right;margin-right:5px;
 }
 
 #config{
-  cursor:pointer;display:inline-block;float:right;margin-right:5px;
+  display:inline-block;float:right;margin-right:5px;
 }
 
 #main{
@@ -130,7 +131,7 @@
 }
 
 #nabarTitle{
-  display:inline-block;margin-top:5px;cursor:pointer;margin-left:5px;
+  display:inline-block;margin-top:5px;margin-left:5px;
 }
 
 #list{
